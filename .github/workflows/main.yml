@@ -1,1 +1,21 @@
+name: Assignment Workflow
 
+on:
+  push:
+
+jobs:
+  demo-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Current Directory
+        run: pwd
+
+      - name: List Files
+        run: ls
+
+      - name: Make Directory
+        run: mkdir DemoFolder
+
+      - name: Echo Message
+        run: echo "I am learning Github Actions"
